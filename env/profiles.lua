@@ -1009,7 +1009,7 @@ local minimal = {
 
 
 -- xCenter
-local xCenter = pfUI_config = {
+local xCenter = {
   ["disabled"] = {
     ["totems"] = "0",
     ["pixelperfect"] = "0",
@@ -1078,7 +1078,7 @@ local xCenter = pfUI_config = {
     ["addons"] = "0",
     ["skin_Flightmaster"] = "0",
     ["mouseover"] = "0",
-    ["skin_Friends"] = "0",
+    ["unusable"] = "0",
     ["socialmod"] = "0",
     ["macrotweak"] = "0",
     ["skin_Game Menu"] = "0",
@@ -1105,8 +1105,8 @@ local xCenter = pfUI_config = {
     ["thirdparty"] = "0",
     ["skin_Quest Timer"] = "0",
     ["panel"] = "0",
-    ["unusable"] = "0",
     ["pet"] = "0",
+    ["skin_Friends"] = "0",
     ["hoverbind"] = "0",
     ["itemclick"] = "0",
     ["skin_KeyBindings"] = "0",
@@ -1120,129 +1120,6 @@ local xCenter = pfUI_config = {
     ["skin_Tooltips"] = "0",
     ["cooldown"] = "0",
     ["combopoints"] = "0",
-  },
-  ["unitframes"] = {
-    ["pet"] = {
-      ["pspace"] = "-1",
-      ["pheight"] = "6",
-      ["width"] = "125",
-    },
-    ["ptarget"] = {
-      ["pspace"] = "-1",
-      ["height"] = "8",
-      ["portrait"] = "off",
-      ["width"] = "125",
-    },
-    ["customcolor"] = "0.15,0.15,0.15,1",
-    ["target"] = {
-      ["panchor"] = "TOPLEFT",
-      ["pspace"] = "-1",
-      ["width"] = "225",
-      ["buffsize"] = "14",
-      ["height"] = "35",
-      ["pheight"] = "6",
-    },
-    ["ttarget"] = {
-      ["pspace"] = "-1",
-      ["pheight"] = "6",
-      ["height"] = "16",
-      ["portrait"] = "off",
-      ["width"] = "125",
-    },
-    ["custombg"] = "1",
-    ["player"] = {
-      ["indicator_pos"] = "RIGHT",
-      ["txthpleft"] = "powerdyn",
-      ["txthprightoffy"] = "-4",
-      ["panchor"] = "TOPRIGHT",
-      ["pspace"] = "-1",
-      ["txthpleftoffy"] = "-6",
-      ["squareaggro"] = "1",
-      ["width"] = "180",
-      ["squarepos"] = "CENTER",
-      ["debuffs"] = "off",
-      ["squaresize"] = "22",
-      ["height"] = "25",
-      ["buffs"] = "off",
-      ["buff_indicator"] = "1",
-      ["showPVP"] = "1",
-      ["buffsize"] = "14",
-    },
-    ["abbrevnum"] = "0",
-    ["group"] = {
-      ["txthpleftoffy"] = "-6",
-      ["txthprightoffy"] = "-6",
-      ["txtpowerright"] = "powerdyn",
-      ["pheight"] = "11",
-      ["txthpleftoffx"] = "06",
-      ["poffy"] = "-3",
-      ["height"] = "24",
-      ["width"] = "130",
-    },
-    ["custombgcolor"] = "0.5,0.2,0.2,1",
-    ["focus"] = {
-      ["width"] = "90",
-      ["height"] = "20",
-      ["pheight"] = "6",
-    },
-    ["raid"] = {
-      ["raidlayout"] = "4x10",
-      ["height"] = "24",
-      ["width"] = "48",
-    },
-    ["tttarget"] = {
-      ["pspace"] = "-1",
-      ["pheight"] = "6",
-      ["height"] = "16",
-      ["portrait"] = "off",
-      ["width"] = "125",
-    },
-    ["custom"] = "1",
-  },
-  ["appearance"] = {
-    ["infight"] = {
-      ["common"] = "1",
-    },
-    ["minimap"] = {
-      ["mouseoverzone"] = "1",
-      ["size"] = "220",
-      ["coordsloc"] = "topright",
-    },
-    ["bags"] = {
-      ["icon_size"] = "28",
-      ["movable"] = "1",
-    },
-    ["border"] = {
-      ["color"] = "0,0,0,1",
-      ["bags"] = "2",
-      ["panels"] = "1",
-      ["unitframes"] = "1",
-      ["default"] = "1",
-      ["chat"] = "2",
-      ["background"] = "0.1,0.1,0.1,0.7",
-      ["actionbars"] = "1",
-    },
-    ["worldmap"] = {
-      ["mapexploration"] = "1",
-      ["mapreveal"] = "1",
-    },
-  },
-  ["buffbar"] = {
-    ["pdebuff"] = {
-      ["width"] = "100",
-      ["height"] = "14",
-      ["enable"] = "1",
-    },
-    ["pbuff"] = {
-      ["width"] = "80",
-      ["height"] = "14",
-      ["enable"] = "1",
-    },
-    ["tdebuff"] = {
-      ["width"] = "136",
-      ["height"] = "14",
-      ["enable"] = "1",
-    },
   },
   ["chat"] = {
     ["global"] = {
@@ -1263,36 +1140,14 @@ local xCenter = pfUI_config = {
       ["width"] = "460",
     },
     ["right"] = {
-      ["height"] = "220",
       ["enable"] = "1",
+      ["height"] = "220",
       ["width"] = "460",
     },
   },
-  ["global"] = {
-    ["profile"] = "xCenter",
-  },
-  ["tooltip"] = {
-    ["position"] = "cursor",
-  },
-  ["thirdparty"] = {
-    ["shagudps"] = {
-      ["dock"] = "1",
-      ["skin"] = "1",
-    },
-    ["twt"] = {
-      ["skin"] = "1",
-    },
-    ["showmeter"] = "1",
-    ["chatbg"] = "0",
-  },
-  ["screenshot"] = {
-    ["levelup"] = "1",
-    ["loot"] = "4",
-  },
-  ["abuttons"] = {
-    ["position"] = "top",
-    ["hideincombat"] = "0",
-    ["rowsize"] = "10",
+  ["buffs"] = {
+    ["textinside"] = "1",
+    ["size"] = "32",
   },
   ["panel"] = {
     ["other"] = {
@@ -1301,20 +1156,166 @@ local xCenter = pfUI_config = {
     ["right"] = {
       ["left"] = "bagspace",
     },
+    ["micro"] = {
+      ["enable"] = "1",
+    },
+    ["use_unitfonts"] = "1",
     ["left"] = {
       ["center"] = "fps",
       ["left"] = "exp",
     },
-    ["use_unitfonts"] = "1",
     ["xp"] = {
       ["xp_always"] = "1",
-      ["xp_width"] = "740",
       ["xp_anchor"] = "pfActionBarMain",
       ["xp_mode"] = "HORIZONTAL",
       ["xp_height"] = "8",
       ["xp_position"] = "BOTTOM",
+      ["xp_width"] = "740",
     },
-    ["micro"] = {
+  },
+  ["unitframes"] = {
+    ["player"] = {
+      ["indicator_pos"] = "RIGHT",
+      ["txthpleft"] = "powerdyn",
+      ["squareaggro"] = "1",
+      ["panchor"] = "TOPRIGHT",
+      ["pspace"] = "-1",
+      ["txthpleftoffy"] = "-12",
+      ["buffsize"] = "14",
+      ["debuffs"] = "off",
+      ["squaresize"] = "22",
+      ["height"] = "25",
+      ["buffs"] = "off",
+      ["buff_indicator"] = "1",
+      ["showPVP"] = "1",
+      ["width"] = "180",
+      ["squarepos"] = "CENTER",
+      ["txthprightoffy"] = "-12",
+    },
+    ["ptarget"] = {
+      ["pspace"] = "-1",
+      ["portrait"] = "off",
+      ["height"] = "8",
+      ["width"] = "125",
+    },
+    ["target"] = {
+      ["panchor"] = "TOPLEFT",
+      ["pspace"] = "-1",
+      ["pheight"] = "6",
+      ["width"] = "225",
+      ["buffsize"] = "14",
+      ["height"] = "35",
+    },
+    ["ttarget"] = {
+      ["pspace"] = "-1",
+      ["pheight"] = "6",
+      ["portrait"] = "off",
+      ["height"] = "16",
+      ["width"] = "125",
+    },
+    ["custombg"] = "1",
+    ["pet"] = {
+      ["pspace"] = "-1",
+      ["pheight"] = "6",
+      ["width"] = "125",
+    },
+    ["abbrevnum"] = "0",
+    ["group"] = {
+      ["txtpowerright"] = "powerdyn",
+      ["txthpleftoffy"] = "-6",
+      ["pheight"] = "11",
+      ["height"] = "24",
+      ["txthpleftoffx"] = "06",
+      ["poffy"] = "-3",
+      ["width"] = "130",
+      ["txthprightoffy"] = "-6",
+    },
+    ["custombgcolor"] = "0.5,0.2,0.2,1",
+    ["raid"] = {
+      ["raidlayout"] = "4x10",
+      ["height"] = "24",
+      ["width"] = "48",
+    },
+    ["focus"] = {
+      ["pheight"] = "6",
+      ["width"] = "90",
+      ["height"] = "20",
+    },
+    ["tttarget"] = {
+      ["pspace"] = "-1",
+      ["pheight"] = "6",
+      ["portrait"] = "off",
+      ["height"] = "16",
+      ["width"] = "125",
+    },
+    ["customcolor"] = "0.15,0.15,0.15,1",
+    ["custom"] = "1",
+  },
+  ["appearance"] = {
+    ["infight"] = {
+      ["common"] = "1",
+    },
+    ["worldmap"] = {
+      ["mapreveal"] = "1",
+      ["mapexploration"] = "1",
+    },
+    ["bags"] = {
+      ["icon_size"] = "28",
+      ["movable"] = "1",
+    },
+    ["border"] = {
+      ["color"] = "0,0,0,1",
+      ["bags"] = "2",
+      ["panels"] = "1",
+      ["unitframes"] = "1",
+      ["default"] = "1",
+      ["background"] = "0.1,0.1,0.1,0.7",
+      ["chat"] = "2",
+      ["actionbars"] = "1",
+    },
+    ["minimap"] = {
+      ["mouseoverzone"] = "1",
+      ["size"] = "220",
+      ["coordsloc"] = "topright",
+    },
+  },
+  ["tooltip"] = {
+    ["position"] = "cursor",
+  },
+  ["thirdparty"] = {
+    ["chatbg"] = "0",
+    ["shagudps"] = {
+      ["dock"] = "1",
+      ["skin"] = "1",
+    },
+    ["twt"] = {
+      ["skin"] = "1",
+    },
+    ["showmeter"] = "1",
+  },
+  ["screenshot"] = {
+    ["levelup"] = "1",
+    ["loot"] = "4",
+  },
+  ["abuttons"] = {
+    ["rowsize"] = "10",
+    ["hideincombat"] = "0",
+    ["position"] = "top",
+  },
+  ["buffbar"] = {
+    ["pdebuff"] = {
+      ["width"] = "100",
+      ["height"] = "14",
+      ["enable"] = "1",
+    },
+    ["pbuff"] = {
+      ["width"] = "80",
+      ["height"] = "14",
+      ["enable"] = "1",
+    },
+    ["tdebuff"] = {
+      ["width"] = "136",
+      ["height"] = "14",
       ["enable"] = "1",
     },
   },
@@ -1375,9 +1376,9 @@ local xCenter = pfUI_config = {
       ["anchor"] = "LEFT",
     },
     ["pfTargetDebuffBar"] = {
-      ["xpos"] = 192,
+      ["xpos"] = 281,
       ["anchor"] = "BOTTOM",
-      ["ypos"] = 229,
+      ["ypos"] = 228,
       ["parent"] = "UIParent",
     },
     ["pfGroup2"] = {
@@ -1393,9 +1394,9 @@ local xCenter = pfUI_config = {
       ["parent"] = "UIParent",
     },
     ["pfActionBarRight"] = {
-      ["xpos"] = 254,
+      ["xpos"] = 240,
       ["anchor"] = "BOTTOM",
-      ["ypos"] = 10,
+      ["ypos"] = 15,
       ["parent"] = "UIParent",
     },
     ["pfLootRollFrame1"] = {
@@ -1417,22 +1418,22 @@ local xCenter = pfUI_config = {
       ["anchor"] = "BOTTOMRIGHT",
     },
     ["pfTotems"] = {
-      ["xpos"] = 464,
-      ["parent"] = "UIParent",
-      ["ypos"] = 134,
+      ["xpos"] = 449,
       ["scale"] = 1,
-      ["anchor"] = "BOTTOMLEFT",
+      ["ypos"] = -83,
+      ["anchor"] = "LEFT",
+      ["parent"] = "UIParent",
     },
     ["pfTargetTarget"] = {
-      ["xpos"] = -496,
+      ["xpos"] = 278,
       ["parent"] = "UIParent",
       ["ypos"] = 138,
-      ["anchor"] = "BOTTOMRIGHT",
+      ["anchor"] = "BOTTOM",
     },
     ["pfActionBarTop"] = {
       ["xpos"] = 464,
       ["anchor"] = "BOTTOMLEFT",
-      ["ypos"] = 10,
+      ["ypos"] = 20,
       ["parent"] = "UIParent",
     },
     ["pfPet"] = {
@@ -1491,9 +1492,9 @@ local xCenter = pfUI_config = {
       ["anchor"] = "BOTTOM",
     },
     ["pfFocus"] = {
-      ["xpos"] = 169,
+      ["xpos"] = 138,
       ["parent"] = "UIParent",
-      ["ypos"] = 139,
+      ["ypos"] = 274,
       ["anchor"] = "BOTTOM",
     },
     ["pfUITracking"] = {
@@ -1510,10 +1511,10 @@ local xCenter = pfUI_config = {
     },
     ["pfTargetTargetTarget"] = {
       ["xpos"] = -445,
-      ["anchor"] = "BOTTOMRIGHT",
-      ["ypos"] = 96,
       ["parent"] = "UIParent",
+      ["ypos"] = 96,
       ["scale"] = 1.1,
+      ["anchor"] = "BOTTOMRIGHT",
     },
     ["pfDurability"] = {
       ["xpos"] = 207,
@@ -1530,7 +1531,7 @@ local xCenter = pfUI_config = {
     ["pfActionBarMain"] = {
       ["xpos"] = 464,
       ["anchor"] = "BOTTOMLEFT",
-      ["ypos"] = 70,
+      ["ypos"] = 94,
       ["parent"] = "UIParent",
     },
     ["pfActionBarStances"] = {
@@ -1542,7 +1543,7 @@ local xCenter = pfUI_config = {
     ["pfFocusTarget"] = {
       ["xpos"] = 164,
       ["parent"] = "UIParent",
-      ["ypos"] = 107,
+      ["ypos"] = 144,
       ["anchor"] = "BOTTOM",
     },
     ["pfChatInputBox"] = {
@@ -1556,20 +1557,14 @@ local xCenter = pfUI_config = {
     ["use_unitfonts"] = "1",
   },
   ["bars"] = {
-    ["bar3"] = {
-      ["icon_size"] = "30",
-      ["autohide"] = "1",
-      ["spacing"] = "6",
-      ["background"] = "0",
-    },
     ["bar9"] = {
       ["icon_size"] = "22",
       ["background"] = "0",
     },
     ["count_color"] = "0,0.9,1,1",
-    ["bar1"] = {
+    ["bar11"] = {
       ["icon_size"] = "27",
-      ["formfactor"] = "6 x 2",
+      ["autohide"] = "1",
       ["background"] = "0",
     },
     ["font"] = "Interface\\AddOns\\pfUI\\fonts\\Homespun.ttf",
@@ -1577,42 +1572,48 @@ local xCenter = pfUI_config = {
       ["icon_size"] = "22",
       ["background"] = "0",
     },
-    ["bar12"] = {
+    ["bar6"] = {
       ["icon_size"] = "27",
-      ["showempty"] = "0",
-      ["formfactor"] = "5 x 2",
+      ["autohide"] = "1",
       ["background"] = "0",
+      ["formfactor"] = "6 x 2",
     },
     ["bar10"] = {
       ["icon_size"] = "22",
       ["background"] = "0",
     },
     ["bind_size"] = "13",
-    ["bar11"] = {
+    ["bar12"] = {
       ["icon_size"] = "27",
-      ["autohide"] = "1",
+      ["showempty"] = "0",
       ["background"] = "0",
+      ["formfactor"] = "5 x 2",
     },
     ["bar2"] = {
       ["icon_size"] = "28",
       ["showempty"] = "0",
       ["background"] = "0",
     },
+    ["bar3"] = {
+      ["icon_size"] = "30",
+      ["spacing"] = "6",
+      ["autohide"] = "1",
+      ["background"] = "0",
+    },
     ["bar5"] = {
       ["icon_size"] = "30",
-      ["formfactor"] = "2 x 6",
       ["spacing"] = "6",
       ["background"] = "0",
+      ["formfactor"] = "2 x 6",
     },
     ["bar8"] = {
       ["icon_size"] = "22",
       ["background"] = "0",
     },
-    ["bar6"] = {
+    ["bar1"] = {
       ["icon_size"] = "27",
-      ["formfactor"] = "6 x 2",
-      ["autohide"] = "1",
       ["background"] = "0",
+      ["formfactor"] = "6 x 2",
     },
     ["bar4"] = {
       ["hide_combat"] = "0",
@@ -1621,10 +1622,6 @@ local xCenter = pfUI_config = {
       ["autohide"] = "1",
       ["background"] = "0",
     },
-  },
-  ["buffs"] = {
-    ["textinside"] = "1",
-    ["size"] = "32",
   },
 }
 
